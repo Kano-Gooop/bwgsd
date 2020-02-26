@@ -1,0 +1,32 @@
+<view class="full-loading" wx:if="{{full_loading}}">
+  <view class="image"></view>
+</view>
+
+<view class="page">
+  <view class="cate-wrapper">
+    <scroll-view scroll-y class="one-level">
+      <view class="scroll">
+        <view bindtap="tab_change" data-index="{{index}}" class="item {{active_index == index ? 'active' : ''}}" wx:for="{{cate_list}}" wx:key="id">
+          {{item.cate_name}}
+        </view>
+      </view>
+    </scroll-view>
+    <scroll-view scroll-y class="two-level">
+      <view class="goods-list">
+        <navigator url="/pages/shop-detail/shop-detail?id={{item.id}}" class="goods" wx:for="{{goods_list}}" wx:key="id">
+          <image src="{{item.pics[0]}}" class="cover" lazy-load></image>
+          <view class="info">
+            <view class="shang">
+              <view class="title two-line-ellipsis">{{item.name}}</view>
+              <view class="shop">{{item.museum_name}}</view>
+            </view>
+            <view class="price">{{item.price}}</view>
+          </view>
+        </navigator>
+      </view>
+      <view class="nodata" wx:if="{{nodata}}">
+        暂无商品
+      </view>
+    </scroll-view>
+  </view>
+</view>
