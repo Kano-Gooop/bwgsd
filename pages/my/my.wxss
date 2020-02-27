@@ -214,7 +214,6 @@
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 40rpx 0;
-  border-bottom: 2rpx solid #e5e5e5;
 }
 
 .menu-box .menu {
@@ -247,7 +246,14 @@
 /* 猜你喜欢 start */
 
 .goods-box {
-  /*padding: 0 24rpx;*/
+  margin-top: 40rpx;
+}
+
+.goods-box > .title {
+  font-size: 34rpx;
+  color: #333;
+  padding-bottom: 26rpx;
+  border-bottom: 2rpx solid #e5e5e5;
 }
 
 .goods-box .goods-list {

@@ -88,6 +88,7 @@
   </view>
 
   <view class="goods-box">
+    <view class="title">为您推荐</view>
     <view class="goods-list">
       <navigator url="/pages/shop-detail/shop-detail?id={{item.id}}" class="goods" wx:for="{{goods_list}}">
         <image src="{{item.pics[0]}}" class="cover"></image>
