@@ -30,8 +30,7 @@
   </view>
 
   <!-- 会员广告 -->
-<!--  <video src="{{video_list[0].video_url}}" class="video" controls object-fit="cover"></video>-->
-  <video src="https://qiniu.bwg.art/bwgsd/goodsvideo/158270013224440800979.mp4" class="video" controls object-fit="cover"></video>
+  <video src="{{video_list[0].video_url}}" class="video" controls object-fit="cover"></video>
 
   <!-- 新品限时 -->
   <view class="youhui-box">
